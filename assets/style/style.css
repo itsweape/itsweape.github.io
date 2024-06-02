@@ -8,19 +8,14 @@
     outline: none;
     border: none;
     text-decoration: none;
-}
-
-.container{
     color: white;
 }
 
-body{
-    color: white;
-    background-color: black;
-}
+/* navbar */
 nav{
     color: white;
 }
+
 .navbar-brand{
     font-style: italic;
 }
@@ -45,36 +40,139 @@ nav{
 .navbar .nav-item .nav-link:hover::after{
     transform: scale(1);
 }
-.card{
+/* navbar end */
+
+/* about */
+.text-index{
+    text-align: justify;
+    line-height: 40px;
+}
+/* about end */
+
+/* skills */
+.skill-card{
+    background-color: rgb(44, 44, 44); 
+    padding: 10px;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 5px 1px;
+    text-align: center;
+    box-shadow: 0 0.2rem 0.2rem rgba(255, 255, 255, 0.3);
+
+}
+
+.card-title{
+    font-size: 14px;
+    background-color: rgb(44, 44, 44);
+}
+/* skills end */
+
+/* projects */
+.card-project{
+    cursor: pointer;
+}
+
+h6{
+    background-color: rgb(44, 44, 44);
+    
+}
+
+.card-body{
     color: white;
     background-color: rgb(44, 44, 44);
 }
 
-.img-skill{
+.card-title-project{
+    font-size: 14px;
+    background-color: rgb(44, 44, 44);
+}
+
+.skill-container{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Hide the default scrollbar in Firefox */
+    -ms-overflow-style: none;
+    background-color: rgb(44, 44, 44);
+}
+
+.skill-card-project{
+    background-color: rgb(30, 30, 30); 
+    padding: 5px 10px;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 2px 5px 2px 0px;
+    text-align: center;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.card-title-skill{
+    font-size: 12px;
+    background-color: rgb(30, 30, 30);
+    margin: 0px;
+}
+/* projects end */
+
+/* modal */
+.modal{
+    background: transparent;
+}
+.header-modal{
     padding: 20px;
-    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(44, 44, 44);
+}
+
+.body-modal{
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+}
+
+.modal-text{
+    font-size: 14px;
+}
+
+.footer-modal{
+    background-color: rgb(44, 44, 44);
+}
+/* modal end */
+
+/* contact */
+.card-contact{
+    max-width: 300px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0.2rem 0.2rem rgba(255, 255, 255, 0.3);
+
+}
+
+.link{
+    text-decoration: none;
 }
 
 i{
     margin: 0px 15px;
 }
 
-.stack{
-    box-sizing: border-box;
-}
-
-.borders{
-    border-left: 1px white solid;
-    padding-right: 5px;
-}
-
-span{
+.text-contact{
     font-size: 14px;
+}
+/* contact end */
+
+/* media screen */
+@media (min-width: 768px) {
+    .card-img-top{
+        height: 120px;
+    }
 }
 
 @media (min-width: 992px) {
-    p{
-        padding: 0px 50px;
-        margin: 100px;
+    .card-img-top{
+        height: 180px;
     }
 }
+/* media screen end */
