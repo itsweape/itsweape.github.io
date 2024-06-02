@@ -168,6 +168,9 @@ i{
     .card-img-top{
         height: 120px;
     }
+    .text-index{
+        padding: 0px 50px;
+    }
 }
 
 @media (min-width: 992px) {
