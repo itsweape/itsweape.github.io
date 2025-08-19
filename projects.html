@@ -19,7 +19,7 @@
 <body class="bg-black">
     </div>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark px-5">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 sticky-top">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -192,7 +192,7 @@
                                         <p class="card-title-skill">TypeScript</p>
                                     </div> 
                                     <div class="skill-card-project">
-                                        <p class="card-title-skill">NodeJS</p>
+                                        <p class="card-title-skill">Node.js</p>
                                     </div> 
                                     <div class="skill-card-project">
                                         <p class="card-title-skill">Fastify</p>
@@ -218,16 +218,45 @@
                                 <p class="card-title-project">Backend REST API for PDU Monitoring System.</p>
                                 <div class="skill-container"> 
                                     <div class="skill-card-project">
-                                        <p class="card-title-skill">NodeJS</p>
+                                        <p class="card-title-skill">Node.js</p>
                                     </div> 
                                     <div class="skill-card-project">
-                                        <p class="card-title-skill">ExpressJS</p>
+                                        <p class="card-title-skill">Express.js</p>
                                     </div> 
                                     <div class="skill-card-project">
                                         <p class="card-title-skill">PostgreSQL</p>
                                     </div>
                                     <div class="skill-card-project">
                                         <p class="card-title-skill">Swagger</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card-project pb-5" data-bs-toggle="modal" data-bs-target="#schedulingModal">
+                        <div class="card border-dark bg-dark">
+                        <img src="assets/img/classs_scheduling.png" class="card-img-top" alt="pduapi">
+                            <div class="card-body">
+                                <h6>Class Scheduling System</h6>
+                                <p class="card-title-project">A website for automate class scheduling system.</p>
+                                <div class="skill-container"> 
+                                    <div class="skill-card-project">
+                                        <p class="card-title-skill">AI</p>
+                                    </div>
+                                    <div class="skill-card-project">
+                                        <p class="card-title-skill">Genetic Algorithm</p>
+                                    </div> 
+                                    <div class="skill-card-project">
+                                        <p class="card-title-skill">Python</p>
+                                    </div> 
+                                    <div class="skill-card-project">
+                                        <p class="card-title-skill">Flask</p>
+                                    </div> 
+                                    <div class="skill-card-project">
+                                        <p class="card-title-skill">Laravel</p>
+                                    </div>
+                                    <div class="skill-card-project">
+                                        <p class="card-title-skill">MySQL</p>
                                     </div>
                                 </div>
                             </div>
@@ -487,7 +516,7 @@
                             <p class="card-title-skill">TypeScript</p>
                         </div> 
                         <div class="skill-card-project">
-                            <p class="card-title-skill">NodeJS</p>
+                            <p class="card-title-skill">Node.js</p>
                         </div> 
                         <div class="skill-card-project">
                             <p class="card-title-skill">Fastify</p>
@@ -528,10 +557,10 @@
                     <h6 class="pt-2 bg-dark">Technologies</h6>
                     <div class="skill-container bg-dark"> 
                         <div class="skill-card-project">
-                            <p class="card-title-skill">NodeJS</p>
+                            <p class="card-title-skill">Node.js</p>
                         </div> 
                         <div class="skill-card-project">
-                            <p class="card-title-skill">ExpressJS</p>
+                            <p class="card-title-skill">Express.js</p>
                         </div> 
                         <div class="skill-card-project">
                             <p class="card-title-skill">PostgreSQL</p>
@@ -577,14 +606,54 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="schedulingModal" tabindex="-1" aria-labelledby="schedulingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Class Scheduling System</h5>
+                </div>
+                <div class="modal-body">
+                    <h6 class="bg-dark">About</h6>
+                    <p class="modal-text">The Class Scheduling System is a web-based application for automatic course scheduling using a genetic algorithm to provide scheduling recommendations. 
+                        By clicking the Generate button, the system will find a schedule solution and then display it. The user can also download the schedule solution by clicking the Download button.</p>
+                    <h6 class="pt-2 bg-dark">Technologies</h6>
+                    <div class="skill-container bg-dark"> 
+                        <div class="skill-card-project">
+                            <p class="card-title-skill">AI</p>
+                        </div>
+                        <div class="skill-card-project">
+                            <p class="card-title-skill">Genetic Algorithm</p>
+                        </div> 
+                        <div class="skill-card-project">
+                            <p class="card-title-skill">Python</p>
+                        </div> 
+                        <div class="skill-card-project">
+                            <p class="card-title-skill">Flask</p>
+                        </div>
+                        <div class="skill-card-project">
+                            <p class="card-title-skill">Laravel</p>
+                        </div> 
+                        <div class="skill-card-project">
+                            <p class="card-title-skill">MySQL</p>
+                        </div> 
+                    </div>
+                    <h6 class="pt-4 bg-dark">GitHub</h6>
+                    <p class="modal-text">Not available for public</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End of modal -->
     <!-- content end -->
 
     <!-- footer -->
-    <div class="container-fluid footer py-2">
+    <div class="container-fluid footer py-2 bg-black">
         <div class="container">
             <div class="text-center">
-                <p style="font-size: small;"> 2022-PRESENT  &copy; Rengganis Wahyuaning Putri</p>
+                <p style="font-size: small;"> 2025  &copy; Rengganis Wahyuaning Putri</p>
             </div>
         </div>
     </div>
@@ -593,4 +662,14 @@
     <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+<script>
+    window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) { 
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 </html>

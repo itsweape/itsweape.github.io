@@ -10,20 +10,22 @@
     text-decoration: none;
     color: white;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /* navbar */
 nav{
     color: white;
 }
-
 .navbar-brand{
     font-style: italic;
 }
-
 .navbar .nav-item .nav-link{
     position: relative;
 }
-
 .navbar .nav-item .nav-link::after{
     content: '';
     position: absolute;
@@ -35,10 +37,16 @@ nav{
     transition: all 0.1s ease;
     transform: scale(0);
 }
-
 .navbar .nav-item .nav-link.active::after,
 .navbar .nav-item .nav-link:hover::after{
     transform: scale(1);
+}
+.navbar {
+  transition: background-color 0.3s ease;
+}
+.navbar.scrolled {
+  background-color: black !important;
+  color: white;
 }
 /* navbar end */
 
@@ -61,7 +69,6 @@ nav{
     box-shadow: 0 0.2rem 0.2rem rgba(255, 255, 255, 0.3);
 
 }
-
 .card-title{
     font-size: 14px;
     background-color: rgb(44, 44, 44);
@@ -72,22 +79,18 @@ nav{
 .card-project{
     cursor: pointer;
 }
-
 h6{
     background-color: rgb(44, 44, 44);
     
 }
-
 .card-body{
     color: white;
     background-color: rgb(44, 44, 44);
 }
-
 .card-title-project{
     font-size: 14px;
     background-color: rgb(44, 44, 44);
 }
-
 .skill-container{
     display: flex;
     overflow-x: auto;
@@ -96,7 +99,6 @@ h6{
     -ms-overflow-style: none;
     background-color: rgb(44, 44, 44);
 }
-
 .skill-card-project{
     background-color: rgb(30, 30, 30); 
     padding: 5px 10px;
@@ -107,7 +109,6 @@ h6{
     text-align: center;
     box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
 }
-
 .card-title-skill{
     font-size: 12px;
     background-color: rgb(30, 30, 30);
@@ -124,16 +125,13 @@ h6{
     border-radius: 10px 10px 0px 0px;
     background-color: rgb(44, 44, 44);
 }
-
 .body-modal{
     padding: 20px;
     background-color: rgb(44, 44, 44);
 }
-
 .modal-text{
     font-size: 14px;
 }
-
 .footer-modal{
     background-color: rgb(44, 44, 44);
 }
@@ -147,21 +145,25 @@ h6{
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0.2rem 0.2rem rgba(255, 255, 255, 0.3);
-
 }
-
 .link{
     text-decoration: none;
 }
-
 i{
     margin: 0px 15px;
 }
-
 .text-contact{
     font-size: 14px;
 }
 /* contact end */
+
+/* footer */
+.footer {
+    margin-top: auto; /* footer selalu di bawah */
+    background-color: #222; /* contoh warna */
+    color: white;
+}
+/* footer end */
 
 /* media screen */
 @media (min-width: 768px) {
@@ -172,7 +174,6 @@ i{
         padding: 0px 50px;
     }
 }
-
 @media (min-width: 992px) {
     .card-img-top{
         height: 180px;
