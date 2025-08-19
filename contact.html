@@ -19,7 +19,7 @@
 
 <body class="bg-black">
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark px-5">
+  <nav class="navbar navbar-expand-lg navbar-dark px-5 sticky-top">
     <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -107,10 +107,10 @@
   <!-- content end -->
 
   <!-- footer -->
-  <div class="container-fluid footer py-2">
+  <div class="container-fluid footer py-2 bg-black">
     <div class="container">
         <div class="text-center py-1">
-            <p style="font-size: small;"> 2022-PRESENT  &copy; Rengganis Wahyuaning Putri</p>
+            <p style="font-size: small;"> 2025  &copy; Rengganis Wahyuaning Putri</p>
         </div>
     </div>
   </div>
@@ -118,4 +118,14 @@
   <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+<script>
+    window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) { 
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 </html>

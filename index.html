@@ -19,7 +19,7 @@
 
 <body class="bg-black">
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark px-5">
+  <nav class="navbar navbar-expand-lg navbar-dark px-5 sticky-top">
     <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,12 +49,14 @@
     <div class="container">
         <div class="col content py-3">
           <h2 class="text-center"> Hi, Rengganis here! </h2><br><br>
-          <p class="text-index"> I am Rengganis Wahyuaning Putri, a third-year student of the Software Engineering Technology study program at Universitas Gadjah Mada
-            who is interested in web development, with hands-on experience in designing, developing, and maintaining web applications.</p>
+          <p class="text-index"> I am Rengganis Wahyuaning Putri, a fresh graduate in software engineering from Universitas Gadjah Mada 
+            who is strongly interested in web development, with hands-on experience in designing, developing, and maintaining web applications.
+            I have internship and project experience as a backend developer and full-stack web developer. </p>
           
           <p class="text-index">I am an adaptable person, highly motivated, and like to learn about new things. I am also productive on both team-based and 
-            self-managed projects, you can see <a href="projects.html" style="color: slategray;">list of my projects here.</a> If you like my works, I'm ready to work full-time on semester breaks and 
-            remotely or part-time on college days.</p>
+            self-managed projects, you can see <a href="projects.html" style="color: slategray;">list of my projects here.</a>
+            . With experience as a developer, I’m dedicated to delivering high-quality solutions that meet user needs. 
+            If you like my works, please feel free to <a href="contact.html" style="color: slategray;">contact</a> me. </p>
         </div>
       </div>
     </div>
@@ -62,10 +64,10 @@
   <!-- content end -->
 
   <!-- footer -->
-  <div class="container-fluid footer py-2">
+  <div class="container-fluid footer py-2 bg-black">
     <div class="container">
         <div class="text-center py-1">
-            <p style="font-size: small;"> 2022-PRESENT  &copy; Rengganis Wahyuaning Putri</p>
+            <p style="font-size: small;"> 2025  &copy; Rengganis Wahyuaning Putri</p>
         </div>
     </div>
   </div>
@@ -74,4 +76,14 @@
   <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+<script>
+    window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) { 
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 </html>
